@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./assets/bg-isb.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+.nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .logo {
+  width: 25%;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 30px;
+  color: #279ea0;
+}
+
+.nav .logo:hover {
+  cursor: pointer;
+  font-size: 35px;
+  color: white;
+}
+
+.navlist {
+  width: 40%;
+}
+
+.navlist li {
+  color: white;
+  list-style: none;
+  display: inline;
+  padding-right: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.navlist li:first-child {
+  color: #279ea0;
+}
+
+.navlist li:hover {
+  cursor: pointer;
+  color: #279ea0;
+}
+
+.mainBody {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+}
+
+.mainBody h3 {
+  color: white;
+  letter-spacing: 0.5px;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.mainBody h1 {
+  color: white;
+  letter-spacing: 0.5px;
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.mainBody h5 {
+  color: white;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.btn {
+  text-align: center;
+}
+#btn1 {
+  padding: 10px 35px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#btn1:hover {
+  background-color: #279ea0;
+  color: white;
+}
+
+#btn2 {
+  padding: 10px 35px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #279ea0;
+}
+
+#btn2:hover {
+  background-color: white;
+  color: black;
+}
+
+.change_content::after {
+  content: "";
+  animation: changeText 10s infinite linear;
+  color: #279ea0;
+}
+
+@keyframes changeText {
+  0% {
+    content: "Islamabad";
+  }
+  20% {
+    content: "Karachi";
+  }
+  40% {
+    content: "Lahore";
+  }
+  60% {
+    content: "Peshawar";
+  }
+  80% {
+    content: "Quetta";
+  }
+  100% {
+    content: "Multan";
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .nav .logo {
+    width: 20%;
+    font-size: 5px;
+  }
+  .nav .logo:hover {
+    cursor: pointer;
+    font-size: 7px;
+    color: white;
+  }
+  .navlist {
+    width: 50vw;
+  }
+  .navlist li {
+    color: white;
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    font-size: 3px;
+    padding-right: 0px;
+  }
+  #btn1,
+  #btn2 {
+    margin: 10px;
+  }
+  .mainBody h1 {
+    font-size: 30px;
+  }
+  .mainBody h3 {
+    font-size: 15px;
+  }
+  .mainBody h5 {
+    font-size: 5px;
+  }
+}
+
+@media only screen and (min-width: 319px) {
+  .nav .logo {
+    width: 25%;
+    font-size: 6px;
+  }
+  .nav .logo:hover {
+    cursor: pointer;
+    font-size: 9px;
+    color: white;
+  }
+  .navlist {
+    width: 50vw;
+  }
+  .navlist li {
+    color: white;
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    font-size: 5px;
+    padding-right: 3px;
+  }
+  #btn1,
+  #btn2 {
+    margin: 10px;
+  }
+  .mainBody h1 {
+    font-size: 35px;
+  }
+  .mainBody h3 {
+    font-size: 18px;
+  }
+  .mainBody h5 {
+    font-size: 7px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .nav .logo {
+    width: 25%;
+    font-size: 9px;
+  }
+  .nav .logo:hover {
+    cursor: pointer;
+    font-size: 12px;
+    color: white;
+  }
+  .navlist {
+    width: 50vw;
+  }
+  .navlist li {
+    color: white;
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 7px;
+    padding-right: 6px;
+  }
+  #btn1,
+  #btn2 {
+    margin: 10px;
+  }
+
+  .mainBody h1 {
+    font-size: 40px;
+  }
+  .mainBody h3 {
+    font-size: 20px;
+  }
+  .mainBody h5 {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .nav .logo {
+    width: 25%;
+    font-size: 12px;
+  }
+  .nav .logo:hover {
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+  }
+  .navlist {
+    width: 50vw;
+  }
+  .navlist li {
+    color: white;
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 8px;
+    padding-right: 10px;
+  }
+  #btn1,
+  #btn2 {
+    margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav .logo {
+    width: 25%;
+    font-size: 17px;
+  }
+  .nav .logo:hover {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+  }
+  .navlist {
+    width: 50vw;
+  }
+  .navlist li {
+    color: white;
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nav .logo {
+    width: 25%;
+    font-size: 21px;
+  }
+  .nav .logo:hover {
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+  }
+  .navlist {
+    width: 50vw;
+  }
+  .navlist li {
+    color: white;
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 17px;
+    padding-right: 18px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .nav .logo {
+    width: 25%;
+    font-size: 25px;
+  }
+  .nav .logo:hover {
+    cursor: pointer;
+    font-size: 32px;
+    color: white;
+  }
+  .navlist {
+    width: 50vw;
+  }
+  .navlist li {
+    color: white;
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding-right: 25px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .nav .logo {
+    width: 25%;
+    font-size: 30px;
+  }
+  .nav .logo:hover {
+    cursor: pointer;
+    font-size: 35px;
+    color: white;
+  }
+  .navlist {
+    width: 50vw;
+  }
+  .navlist li {
+    color: white;
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    padding-right: 30px;
+  }
+}
